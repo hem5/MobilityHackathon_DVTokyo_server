@@ -1,6 +1,6 @@
 # About
 
-This is dockerised project for Node.js.
+This is dockerised project using Node.js.
 
 
 # Commands
