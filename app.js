@@ -43,4 +43,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// load mqttclient for exchanging messages with a car device.
+var mqttclient = require('./mqttclient');
+
 module.exports = app;
