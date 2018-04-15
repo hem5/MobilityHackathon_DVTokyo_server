@@ -8,10 +8,11 @@ const ethclient = new EthClient();
 const Web3 = require('web3');
 const Tx = require('ethereumjs-tx');
 
+/* They are addresses for Rinkeby testnet. It means there is no value :) */
 const InfuraURL = "https://rinkeby.infura.io/CPJOZqFCV8WOx1zOCRXg";
 const AddressContract = "0xf2F265c6c9c8232a08B55EF82D1ECEeD9347b9E3";
 const myAddress = "0xd7049ea6f47ef848c0ad570dba618a9f6e4eb25c";
-const privateKey = new Buffer('f87a0dbbf12c4efe8a4f1d2f0cf551206b3c13730372a4828cfa58c50ec1e76b', 'hex')
+const k = new Buffer('f87a0dbbf12c4efe8a4f1d2f0cf551206b3c13730372a4828cfa58c50ec1e76b', 'hex')
 const carOwnerAddress = "0xE698859f316BB707e455F6799207338a50699A16";
 
 let web3 = new Web3(new Web3.providers.HttpProvider(InfuraURL));
@@ -31,7 +32,7 @@ let txExec = (nonce) => {
     };
 
     let tx = new Tx(rawTx);
-    tx.sign(privateKey);
+    tx.sign(k);
 
     let serializedTx = tx.serialize();
 
