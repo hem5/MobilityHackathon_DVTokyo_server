@@ -1,7 +1,13 @@
 # About
 
-This is dockerised project using Node.js.
-
+- This is dockerised project using Node.js.
+- This repository includes server side code to control power supply between vehicle to vehicle.
+- Communicate to smartphone via HTTP, to IoT device via MQTT, and Ethereum blockchain via jsonrpc on HTTP.
+- blockchain information
+  - Ethereum testnet (Rinkeby)
+  - ERC20 based token
+  - use Infura.io as Ethreum client
+  - contract address: `0xf2F265c6c9c8232a08B55EF82D1ECEeD9347b9E3`
 
 # Commands
 
