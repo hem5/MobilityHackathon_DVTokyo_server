@@ -55,11 +55,9 @@ let getNonce = () => {
 EthClient.prototype.exec = () => {
     getNonce().then((nonce) => {
         txExec(nonce);
-        resolve();
     }).catch((err) => {
         console.log("detect error!");
         console.log(err);
-        reject();
     });
 };
 
